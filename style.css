@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./img/logo.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    padding: 20px;
+    background-color: lightblue;
+    width: 50%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+}
+#content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#form-container{
+    display: flex;
+    flex-direction: column;
+}
+#btn{
+    width: 30%;
+    background: linear-gradient(to right, white, blue);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+input{
+    width: 80%;
+    height: 30px;
+    margin:10px auto;
+    
+}
+ul{
+    list-style: none;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#faceOption::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/iconFacebook.png)
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+#googOption::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/iconGoogle.png)
+    ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+#btn:hover{
+    background: linear-gradient(to right, white ,darkblue);
+}
+li:hover{
+    background-color: rgb(108, 199, 229);
+}
